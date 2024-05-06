@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar{
+  width: 0;
+}
+body{
+    font-family: sans-serif;
+    background-image: url('./ranch2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  }
+  main{
+    height: 86vh;
+  }
+/*  */
+#navContainer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: white;
+}
+#navitem{
+    color: gray;
+    font-size: 25px;
+    font-weight: bold;
+}
+#navitem:hover{
+    color: orange;
+    transition: .3s ease-in-out;
+}
+/*  */
+.formContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+/*  */
+.login-form{
+    width:  90%;
+    max-width:  500px;
+    background: transparent;
+    padding:  20px;
+    height: 100%;
+    max-height: 550px;
+    align-self: self-start;
+    backdrop-filter: brightness(0.8);
+}
+.form-title{
+    text-align: center;
+    font-size:  30px;
+    font-weight:  600;
+    color: white;
+    margin: 30px 20px;
+}
+.form-input {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+  }
+  .form-input label {
+    display: block;
+    font-size:  15px;
+    color: white;
+    margin-bottom:  10px;
+  }
+  .form-input input {
+    width:  100%;
+    padding:  10px;
+    border-radius:  4px;
+    border:  1.5px solid orange;
+    font-size:  15px;
+    background: transparent;
+    color: white;
+  }
+  #login-btn {
+    width:  100%;
+    padding:  12px;
+    font-size:  15px;
+    text-transform: uppercase;
+    background: orange;
+    border-radius:  5px;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+  }
+  #login-btn:hover {
+    opacity: 70%;
+    transition: .3s ease-in-out;
+  }
+  #checkbox{
+   width: 10px;
+  }
+  #forgotPassword{
+    float: right;
+    color: white;
+  }
+  .form-checkbox{
+    margin-bottom: 20px;
+  }
+  #forgotPassword:hover{
+    color: orange;
+    transition: .3s ease;
+  }
+  #signup{
+    text-align: center;
+  }
+  #here{
+    color: white;
+  }
+  #here:hover{
+    color: orange;
+    transition: .3s ease-in-out;
+  }
+  /*  */
+  .container{
+    width:  90%;
+    max-width:  500px;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    padding:  20px;
+    height: 100%;
+    max-height: 550px;
+    align-self: flex-start;
+    background-image: url('./ranch3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /*  */
+  .logoContainer{
+    display: flex;
+    justify-content: end;
+  }
+  #title{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 40px 40px 60px;
+    padding-left: 0;
+    float: right;
+  }
+
+  #logo img {
+    width: 116px;
+    height: 25px;
+    margin-top: 58px;
+    margin-right: 38px;
+    margin-bottom: 83px;
+  }
+
+  #greet{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 70px 40px 10px ;
+    width: 100%;
+    text-align: end;
+  }
+  #saying{
+    font-size: 15px;
+    padding: 0px 40px;
+    text-align: end;
+    width: 100%;
+  }
+  /*  */
+  .icons{
+    display: flex;
+    justify-content: end;
+    padding: 15px 40px ;
+  }
+#fb{
+    width: 40px;
+    height: 40px;
+    background-image: url('./facebook.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    margin-top: 0;
+    border-radius: 50%;
+}
+#ig{
+    width: 40px;
+    height: 40px;
+    background-image: url('./instagram.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    margin-top: 0;
+    border-radius: 50%;
+}
+#email{
+    width: 40px;
+    height: 40px;
+    background-image: url('./at.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    margin-top: 0;
+    border-radius: 50%;
+}
+.icon#fb:hover{
+    background-color: orange;
+    transition: .3s ease-in-out;
+}
+.icon#ig:hover{
+    background-color: orange;
+    transition: .3s ease-in-out;
+}
+.icon#email:hover{
+    background-color: orange;
+    transition: .3s ease-in-out;
+}
+@media (max-width: 800px){
+  body{
+    height: 180vh;
+  }
+  #greet{
+    padding: 35px 40px 10px;
+  }
+}
+@media (max-width: 350px) {
+  .container{
+    font-size: 10px;
+    height: 340px;
+  }
+  #title{
+    font-size: 20px;
+
+  }
+  #greet{
+    font-size: 20px;
+    padding-top: 60px;
+  }
+  .logoContainer{
+    height: 50px;
+  }
+  .login-form{
+    height: 470px;
+  }
+  main{
+    height: 160vh;
+  }
+  #fb{
+    width: 20px;
+    height: 20px;
+  }
+  #ig{
+    width: 20px;
+    height: 20px;
+  }
+  #email{
+    width: 20px;
+    height: 20px;
+  }
+  .form-checkbox{
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Map.css">
+</head>
+<body>
+    <header>
+    <nav class="navContainer">
+        <div id="leftDiv">
+
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/surcxhka.json"
+                trigger="hover"
+                stroke="bold"
+                state="hover-jump-roll"
+                colors="primary:#ffffff,secondary:#e88c30"
+                style="width:50px;height:50px">
+            </lord-icon>
+
+            <div id="home"><a href="Mainn-Signed.html"><span></span>HOME</a></div>
+        </div>
+        <div id="rightDiv">
+            <input id="search" type="search" placeholder="Search...">
+            <div id="account"><a href="account.html"><span></span>ACCOUNT</a></div>
+            <div class="toggleBtn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="menu">
+            <li><div id="home"><a href="Mainn-Signed.html"><span></span>Home</a></div></li>
+            <li><div id="searchDrop"><a href="#"><span></span>Search</a></div>
+            <li><div id="account"><a href="account.html"><span></span>Account</a></div></li>
+        </div>
+    </nav> 
+    
+    <script>
+        const btn = document.querySelector('.toggleBtn')
+        const btnIcon = document.querySelector('.toggleBtn i')
+        const dropMenu = document.querySelector('.menu')
+
+        btn.onclick = function(){
+            dropMenu.classList.toggle('open')
+            const open = dropMenu.classList.contains('open')
+
+            btnIcon.classList = open
+            ? 'fa fa-xmark'
+            : 'fa fa-bars'
+        }
+    </script>
+    <!-- sliders -->
+    <div class="slider">
+        <div class="sliderItems">
+            <div class="item active">
+                <img src="./hundred islands.webp">
+                <div class="content">
+                    <p>luzon</p>
+                    <h2>Hundred Islands</h2>
+                    <p>
+                        The Hundred Islands National Park, located in Alaminos, Pangasinan, Luzon, Philippines, is a breathtaking archipelago consisting of 124 limestone islets (at low tide) scattered across the turquoise waters of the Lingayen Gulf. These emerald gems, some resembling mushrooms due to erosion, offer a paradise for nature lovers and adventure seekers.
+                    </p>
+                    <br>
+                    <p>
+                        
+                        <b>Location/Jump-off:</b> Lucap Port, Alaminos City, Pangasinan, Philippines
+                        <br><b>Contact:</b> Alaminos City Tourism Office: +63 995 835 5155 
+                        <br><b>Best Things to Do:</b> Island hopping, swimming, snorkeling, kayaking, helmet diving, exploring caves, picnicking, and enjoying stunning views.
+                    </p>
+                    <br>
+                    <button class="save"><span></span>Save</button>
+                    <button class="comment"><span></span>Comment</button>
+                                                    </div>
+            </div>
+            <div class="item">
+                <img src="./Kaparnakan Falls.png">
+                <div class="content">
+                    <p>luzon</p>
+                    <h2>Kaparnakan Falls</h2>
+                    <p>
+                        Nestled in the verdant jungles of Barangay Cadaclan, Sibuyan Island, Romblon province, Luzon, Philippines, lies Kaparkan Falls. This majestic cascade tumbles over numerous limestone terraces, creating a series of cascading pools that invite refreshing dips. Lush vegetation surrounds the falls, creating a picture-perfect escape for those seeking a connection with nature.
+                    </p>
+                    <br>
+                    <p>
+                        <b>Location/Jump-off:</b> Barangay Cadaclan, Sibuyan Island, Romblon, Philippines
+                        <br><b>Contact:</b> Romblon Municipal Tourism Office: romblontourismoffice@gmail.com
+                        <br><b>Best Things to Do:</b> Swimming in the cool pools, trekking through the surrounding forest, exploring hidden caves behind the falls (with a guide), picnicking by the falls, and enjoying the refreshing mountain air.
+                    </p>
+                    <br>
+                    <button class="save"><span></span>Save</button>
+                    <button class="comment"><span></span>Comment</button>
+                                                    </div>
+            </div>
+            <div class="item">
+                <img src="./maligcongRiceTerraces.png">
+                <div class="content">
+                    <p>luzon</p>
+                    <h2>Maligcong Rice Terraces</h2>
+                    <p>
+                        Carved gracefully into the slopes of Mount Kupapey in Bontoc, Mountain Province, Luzon, Philippines, lies the Maligcong Rice Terraces. This mesmerizing landscape showcases the rich cultural heritage and agricultural ingenuity of the Ifugao people. Unlike the world-renowned Banaue Rice Terraces, Maligcong offers a more intimate and serene experience, with cascading emerald paddies nestled amidst lush mountains.
+                    </p>
+                    <br>
+                    <p>
+                        <b>Location/Jump-off: </b>Barangay Maligcong, Bontoc, Mountain Province, Philippines
+                        <br><b>Contact:</b> Bontoc Municipal Tourism Office: (+63) 74-616-2971<br>
+                        <b>Best Things to Do:</b> Trekking through the rice terraces, admiring the sunrise or sunset views, experiencing local culture through homestays, learning about traditional Ifugao rice farming practices, and exploring nearby caves and waterfalls.
+                    </p>
+                    <br>
+                    <button class="save"><span></span>Save</button>
+                    <button class="comment"><span></span>Comment</button>
+                                    </div>
+            </div>
+            <div class="item">
+                <img src="./mountPulag.png">
+                <div class="content">
+                    <p>luzon</p>
+                    <h2>Mt. Pulag</h2>
+                    <p>
+                        Claiming the title of Luzon's highest peak and the third highest mountain in the Philippines, Mt. Pulag (or Bundok Pulag) stands at a majestic 2,928 meters (9,606 ft) above sea level. Nestled within the Cordillera Central mountain range, Mt. Pulag is a haven for trekkers seeking breathtaking landscapes, diverse ecosystems, and the chance to witness the legendary "sea of clouds" phenomenon at sunrise.
+
+                    </p>
+                    <br>
+                    <p>
+                    <b>Location/Jump-off:</b> Depending on your chosen trail, common jump-off points include: <br>
+                      Ambangeg Trail: Barangay Ambangeg, Kabayan, Benguet <br>
+                      Akiki Trail: Barangay Pula, Kayapa, Nueva Vizcaya <br>
+                      Tawangan Trail: Barangay Tawangan, Kabayan, Benguet <br>
+                      Ambaguio Trail: Barangay Ambaguio, Kayapa, Nueva Vizcaya <br>
+                    <b>Contact:</b> DENR Cordillera Administrative Region (CAR): (+63) 74-619-1302 <br>
+                    <b>Best Things to Do:</b> Trekking, camping, enjoying panoramic views, wildlife watching - possibility of seeing rare birds and the Philippine deer), exploring mossy forests and grasslands, and experiencing the unique culture of the indigenous Ibaloi people.
+                    </p>
+                    <br>
+                    <button class="save"><span></span>Save</button>
+                    <button class="comment"><span></span>Comment</button>
+                                    </div>
+            </div>
+            <div class="item">
+                <img src="./sumaguing cave.png">
+                <div class="content">
+                    <p>luzon</p>
+                    <h2>Sumaguing Cave</h2>
+                    <p>
+                        Embark on a subterranean adventure at Sumaguing Cave, also known as "The Big Cave," located in Sagada, Mountain Province, Luzon, Philippines. This vast cave network boasts impressive rock formations sculpted by nature over millennia. Explore its chambers adorned with stalagmites, stalactites, and other mesmerizing geological wonders.
+
+                    </p>
+                    <br>
+                    <p>
+                    <b>Location/Jump-off:</b> Sumaguing Cave is situated 45 minutes south of Sagada town proper. <br>
+                    <b>Contact:</b> Local tour guides in Sagada can be contacted through guesthouses or tourist information centers. <br>
+                    <b>Best Things to Do:</b> Spelunking tours, marveling at rock formations ("King's Curtain," "Cauliflower"), spelunking photography (with guide permission), learning about the cave's history and local legends.
+                    </p>
+                    <br>
+                    <button class="save"><span></span>Save</button>
+                    <button class="comment"><span></span>Comment</button>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- images -->
+    <div class="imgContainer">
+        <div class="item active">
+            <img src="./hundred islands.webp">
+            <div class="icontent">
+                Hundred Islands
+            </div>
+        </div>
+        <div class="item">
+            <img src="./Kaparnakan Falls.png">
+            <div class="icontent">
+                Kaparnakan Falls
+            </div>
+        </div>
+        <div class="item">
+            <img src="./maligcongRiceTerraces.png">
+            <div class="icontent">
+                Maligcong Rice Terraces
+            </div>
+        </div>
+        <div class="item">
+            <img src="./mountPulag.png">
+            <div class="icontent">
+                Mt. Pulag
+            </div>
+        </div>
+        <div class="item">
+            <img src="./sumaguing cave.png">
+            <div class="icontent">
+                Sumaguing Cave
+            </div>
+        </div>        
+    </div>
+    <script src="functions.js"></script>
+    </header>
+</body>
+</html>

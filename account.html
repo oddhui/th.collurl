@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="account.css">
+
+</head>
+<body>
+    <header>
+    <nav class="navContainer">
+        <div id="leftDiv">
+            
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/surcxhka.json"
+                trigger="hover"
+                stroke="bold"
+                state="hover-jump-roll"
+                colors="primary:#ffffff,secondary:#e88c30"
+                style="width:50px;height:50px">
+            </lord-icon>
+
+            <div id="home"><a href="Mainn-Signed.html"><span></span>HOME</a></div>
+        </div>
+        <div id="rightDiv">
+            <input id="search" type="search" placeholder="Search...">
+            <div id="account"><span></span>ACCOUNT</div>
+            <div class="toggleBtn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <!-- account menu -->
+        <div class="accountMenu">
+            <li><a id="user" href="account.html"><i class="fa fa-user"></i>Username</a></li>
+            <li><a href="signIn add.html"> + Add</a></li>
+            <li><a href="index.html">Log Out</a></li>
+        </div>
+        <div class="menu">
+            <li><a id="user" href="account.html"><i class="fa fa-user"></i>Username</a></li>
+            <li><div id="home"><a href="Mainn-Signed.html">Home</a></div></li>
+            <li><div id="searchDrop"><a href="#">Search</a></div>
+            <li><a href="signIn add.html">+ Add</a></li>
+            <li><a href="index.html">Log Out</a></li>
+        </div>
+    </nav> 
+
+    <!-- Profile -->
+    <div class="profile">
+        <div class="container">
+            <nav id="sidebar">
+                <ul class="sidebarNav">
+                    <li><a href="#" onclick="profile()">Profile</a></li>
+                    <li><a href="#" onclick="notif()">Notifications</a></li>
+                    <li><a href="#" onclick="save()">Saved</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="index.html">Log Out</a></li>
+              </ul>
+            </nav>
+            <!--  -->
+            <div class="sidebarMenu">
+                <div class="toggleBtn2" onclick="menu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+            <!-- P -->
+            <div id="Pcontent">
+              <section class="s1">
+                <div class="profilePic">
+                    <i class="fa fa-user"></i>
+                </div>
+                <h1 class="name">User name</h1>
+            </section>
+            <section class="s2">
+                <div class="bio"> <b>Bio here... </b> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia 
+                    non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
+            </section>
+            </div>
+            <!-- N -->
+            <div id="Ncontent">
+                <div class="notif-content">
+                    No notifications :) ...
+                </div>
+            </div>
+            <!-- S -->
+            <div id="Scontent">
+	
+                <div class="saveContainer">
+
+                    <div class="savedItems">
+                        <div class="item">
+                            <a href="mindanao.html"><img src="./communal ranch.png"></a>
+                        </div>
+                        <div class="item">
+                            <a href="visayas.html"><img src="./kawasan falls.png"></a>
+                        </div>
+                        <div class="item">
+                            <a href="luzon.html"><img src="./hundred islands.webp"></a>
+                        </div>
+                        <div class="item">
+                            <a href="mindanao.html"><img src="./zamboanga city.png"></a>
+                        </div>
+                        <div class="item">
+                            <div class="folder">New Folder<i class="fa fa-plus" ></i></div>                    
+                        </div>
+                    </div>
+                </div>        
+             </div>
+          <!--  -->
+            <div id="sbMenu">
+                    <li><a href="#" onclick="profile()">Profile</a></li>
+                    <li><a href="#" onclick="notif()">Notifications</a></li>
+                    <li><a href="#" onclick="save()">Saved</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="index.html">Log Out</a></li>
+            </div>
+    </div>
+    <script>
+        const btn = document.querySelector('.toggleBtn')
+        const btnIcon = document.querySelector('.toggleBtn i')
+        const dropMenu = document.querySelector('.menu')
+        const accBtn = document.querySelector('#account')
+        const accMenu = document.querySelector('.accountMenu')
+        const btn2 = document.querySelector('.toggleBtn2') 
+        const sidebar = document.querySelector('.sidebarMenu')
+        const btnIcon2 = document.querySelector('.toggleBtn2 i')
+
+        btn.onclick = function(){
+            dropMenu.classList.toggle('open')
+            const open = dropMenu.classList.contains('open')
+
+            btnIcon.classList = open
+            ? 'fa fa-xmark'
+            : 'fa fa-bars'
+        }
+        btn2.onclick = function() {
+  sidebar.classList.toggle('open');  // Toggle 'open' class on the sidebar element
+  const isOpen = sidebar.classList.contains('open');  // Store the open state
+
+  btnIcon2.classList = isOpen ? 'fa fa-xmark' : 'fa fa-bars'; // Update icon for sidebar
+
+  document.getElementById('sbMenu').style.display = isOpen ? "flex" : "none"; // Toggle sidebar menu
+};
+        
+        accBtn.onclick = function(){
+            accMenu.classList.toggle('open')
+            const open = accMenu.classList.contains('open')
+        }
+    </script>
+    <script src="account.js"></script>
+</body>
+</html>

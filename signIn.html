@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler's Guide</title>
+    <link rel="stylesheet" href="signIn.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navContainer">
+                <li><a id="navitem" href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="formContainer" action="Mainn-Signed.html">
+            <div class="login-form">
+                <div class="form-title">Sign In</div>
+                <div class="form-input">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" required>
+                
+                <div class="form-input">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" required>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <span style="margin-left: 5px;">Remember me</span>
+                    <a href="#" id="forgotPassword">Forgot Password?</a>
+                </div>
+                
+                <input type="submit" value="Sign In" id="login-btn"></button>
+                
+              </div>
+              <div id="signup">Don't have an account? <a id="here" href="signUp.html" style="margin-left:  5px;">Sign up Here</a>
+              </div>
+            </div>
+            <div class="container">
+                <div class="logoContainer">
+                    <div id="logo"><img src="./ROADMAP.png" alt=""></div>
+                    <!-- <div id="title">ROADMAP</div> -->
+                </div>
+                <div id="greet">Welcome!</div>
+                <div id="saying">to your travel guide buddy <br> from here to anywhere, unleash your inner explorer!</div>
+                <div class="icons">
+                    <a href="#"><div class="icon" id="fb"></div></a>
+                    <a href="#"><div class="icon" id="ig"></div></a>
+                    <a href="#"><div class="icon" id="email"></div></a>
+                </div>
+            </div>
+        </form>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const form = document.querySelector('.formContainer');
+              form.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                
+                
+                if (username === 'admin' && password === '12345') {
+                  window.location.href = 'admin.html';
+                } else {
+                    window.location.href = 'Mainn-Signed.html'; 
+                }
+              });
+            });
+            </script>
+            
+    </main>
+</body>
+</html>
